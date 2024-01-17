@@ -3,72 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heartbeat Animation</title>
+  <title>Niyatillo va Nastarin </title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       margin: 0;
-      background-color: #f0f0f0;
-      overflow: hidden;
+      padding: 0;
+      background-color: #f8f8f8;
     }
 
-    .heart {
-      width: 100px;
-      height: 100px;
-      background-color: #e74c3c;
-      position: relative;
-      transform: rotate(-45deg);
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
     }
 
-    .heart::before,
-    .heart::after {
-      content: "";
-      width: 100px;
-      height: 100px;
-      background-color: #e74c3c;
-      border-radius: 50%;
-      position: absolute;
+    section {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    .heart::before {
-      top: -50px;
-      left: 0;
+    h2 {
+      color: #333;
     }
 
-    .heart::after {
-      top: 0;
-      left: 50px;
+    p {
+      line-height: 1.6;
+      color: #555;
     }
-    .name{ 
-        margin-left: -400px;
-        margin-top:50px;
-        font-size: 30px;
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="heart"></div>
-    <div class="name">Niyatillo + Nastarin =</div>
 
-  <script>
-    function startHeartbeat() {
-      const heart = document.querySelector('.heart');
+  <header>
+    <h1>Niyatillo va Nastarin </h1>
+  </header>
 
-      function animateHeartbeat() {
-        heart.style.transform = 'rotate(-45deg) scale(1.1)';
-        setTimeout(() => {
-          heart.style.transform = 'rotate(-45deg) scale(1)';
-        }, 500);
-      }
+  <section>
+    <h2>Niyatillo </h2>
+    <p> 2007.09.10</p>
 
-      setInterval(animateHeartbeat, 1000);
-    }
+    <!-- Boshqa ma'lumotlar va rasmlar qo'shishingiz mumkin -->
+  </section>
 
-    startHeartbeat();
-  </script>
+  <section>
+    <h2>Nastarin </h2>
+    <p>2012.</p>
+
+    <!-- Boshqa ma'lumotlar va rasmlar qo'shishingiz mumkin -->
+  </section>
+
+  <footer>
+    &copy; 2023.12.17 tanishgan kunimiz Niyatillo va Nastarin 
+  </footer>
+
 </body>
 </html>
